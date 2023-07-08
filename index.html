@@ -8,18 +8,98 @@
       property="og:description"
       content="this is where you can post, rent and buy estate properties..."
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- light box library -->
+    <link href="./styles/lightbox.css" rel="stylesheet" />
+
+    <!--  -->
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Estate Nova</title>
   </head>
   <body>
     <header>
       <nav>
-        <div class="nav_logo"></div>
+        <a href="#" class="nav_logo">
+          <img src="./images//logo.png" alt="" />
+        </a>
+        <div class="nav_links">
+          <a href="#about" class="nav_link">About us</a>
+          <a href="#residiences" class="nav_link">Residiences</a>
+          <a href="#values" class="nav_link">Our value</a>
+          <a href="#contact" class="nav_link">Contact us</a>
+          <a href="#" class="nav_link login_btn">Login</a>
+        </div>
       </nav>
-      <main></main>
+      <main class="main_section">
+        <div class="main_section_col_1">
+          <h1 class="main_section_h1">Discover Most Suitable Property</h1>
+          <p class="main_section_p">
+            Find a variety of properties that suit you very easilty Forget all
+            difficulties in finding a residence for you
+          </p>
+          <form class="main_section_form">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="search location..." />
+            <button>Search</button>
+          </form>
+          <!--  -->
+          <div class="main_section_col_1_footer">
+            <div class="main_section_property_sold">
+              <i class="fa-solid fa-key main_secion_icons"></i>
+              <div class="main_section_footer_row">
+                <h4 class="main_section_h4">1200</h4>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <p class="main_section_footer_p">Property Sold</p>
+            </div>
+            <!--  -->
+            <div class="main_section_happy_customer">
+              <i class="far fa-face-smile main_secion_icons"></i>
+              <div class="main_section_footer_row">
+                <h4 class="main_section_h4">2000</h4>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <p class="main_section_footer_p">Happy Customer</p>
+            </div>
+            <!--  -->
+            <div class="main_section_awards_won">
+              <i class="fa-solid fa-award main_secion_icons"></i>
+              <div class="main_section_footer_row">
+                <h4 class="main_section_h4">28</h4>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <p class="main_section_footer_p">Awards Won</p>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="main_section_col_2">
+          <a data-lightbox="hero image" href="./images//hero-image.jpg">
+            <img
+              src="./images/hero-image.jpg"
+              alt="hero image"
+              class="main_Section_img"
+            />
+          </a>
+        </div>
+      </main>
+
+      <!--  -->
       <div class="header_background_box"></div>
     </header>
     <!--  -->
+
+    <!-- light box js library -->
+    <script src="./scripts/lightbox.js"></script>
+    <script src="./scripts/lightbox-plus-jquery.js"></script>
     <!-- scripts -->
     <script src="./scripts/app.js"></script>
   </body>
