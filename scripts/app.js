@@ -9,6 +9,8 @@ $(".main_section_h4").counterUp({
 /*=============*/
 /*OWL CAROUSEL INITIALIZATION*/
 /*===========*/
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel();
+$(".residence_row").slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
 });
