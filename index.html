@@ -15,8 +15,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- light box library -->
+    <!-- light box library css -->
     <link href="./styles/lightbox.css" rel="stylesheet" />
+
+    <!-- aos library css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
 
     <!--  -->
     <link rel="stylesheet" href="./styles/style.css" />
@@ -30,15 +37,16 @@
         </a>
         <div class="nav_links">
           <a href="#about" class="nav_link">About us</a>
-          <a href="#residiences" class="nav_link">Residiences</a>
+          <a href="#residences" class="nav_link">Residiences</a>
           <a href="#values" class="nav_link">Our value</a>
           <a href="#contact" class="nav_link">Contact us</a>
           <a href="#" class="nav_link login_btn">Login</a>
         </div>
       </nav>
       <main class="main_section">
-        <div class="main_section_col_1">
+        <div class="main_section_col_1" data-aos="fade-right">
           <h1 class="main_section_h1">Discover Most Suitable Property</h1>
+          <div class="title_right_cirle"></div>
           <p class="main_section_p">
             Find a variety of properties that suit you very easilty Forget all
             difficulties in finding a residence for you
@@ -81,7 +89,7 @@
         </div>
 
         <!--  -->
-        <div class="main_section_col_2">
+        <div class="main_section_col_2" data-aos="fade-left">
           <a data-lightbox="hero image" href="./images//hero-image.jpg">
             <img
               src="./images/hero-image.jpg"
@@ -91,15 +99,124 @@
           </a>
         </div>
       </main>
-
       <!--  -->
       <div class="header_background_box"></div>
     </header>
     <!--  -->
+    <!--  -->
+
+    <!-- logo section -->
+    <section class="logo_rows" data-aos="fade-up" data-aos-duration="1300">
+      <img src="./images/tower.png" class="logo_section_logos" alt="" />
+      <img src="./images/equinix.png" class="logo_section_logos" alt="" />
+      <img src="./images/realty.png" class="logo_section_logos" alt="" />
+      <img src="./images/prologis.png" class="logo_section_logos" alt="" />
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="about_section">
+      <div class="about_section_header">
+        <h2 class="about_section_h2">About Us</h2>
+        <p class="about_section_p1">
+          Duis aute irure dolor in reprehed in volupted velit esse dolore
+        </p>
+      </div>
+      <!--  -->
+      <figure class="about_section_row">
+        <img
+          src="./images/villa-house.jpg"
+          alt=""
+          class="about_section_col_1"
+        />
+        <div class="about_section_col_2">
+          <div class="about_section_col_2_header">
+            <h3 class="about_section_col_2_h3">Who we are</h3>
+            <h1 class="about_section_col_2_h1">
+              Best and Award Winning Real Estate Business in USA 2019
+            </h1>
+          </div>
+          <p class="about_section_col_2_p">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+            nostrum, doloremque quaerat sit tempora eius est reiciendis
+            accusamus magnam quae. Explicabo dolore officia, iure a ullam
+            aliquam nemo excepturi, repellat. uod ut delectus ad tempora.
+          </p>
+          <!--  -->
+          <div class="about_section_col_2_row">
+            <div class="about_section_col_2_col_1">
+              <div class="about_section_col_2_col_1_header">
+                <i class="fa-solid fa-certificate"></i>
+                <h1>Cretified Company</h1>
+              </div>
+              <p class="about_section_col_2_col_1_p">
+                We'll generate a sitemap for your site, submit it to search
+                engine is and track crawler access.
+              </p>
+            </div>
+            <div class="about_section_col_2_col_2">
+              <div class="about_section_col_2_col_1_header">
+                <i class="fa-regular fa-thumbs-up"></i>
+                <h1>Highly experienced</h1>
+              </div>
+              <p class="about_section_col_2_col_1_p">
+                We'll generate a sitemap for your site, submit it to search
+                engine is and track crawler access.
+              </p>
+            </div>
+          </div>
+        </div>
+      </figure>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <!-- Properties section -->
+    <!--  -->
+    <section id="residencies" class="residence_section">
+      <div class="residence_header">
+        <h2 class="h2 residence_header_h2">Best Choices</h2>
+        <h1 class="residence_header_h1">Popular Residencies</h1>
+      </div>
+      <!-- properties -->
+      <div class="residence_row">
+        <div class="residence_card">
+          <img src="./images/r1.jpg" alt="" class="residence_card_img" />
+          <div class="residence_card_context">
+            <h4 class="residence_card_h4">
+              <span>$</span>
+              <span>47,043</span>
+            </h4>
+            <h3 class="residence_card_h3">Aliva Priva Jardin</h3>
+            <p class="residence_card_p">
+              Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur,
+              DKI Jakarta
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jquery library -->
+    <script src="./scripts/jquery.js"></script>
 
     <!-- light box js library -->
     <script src="./scripts/lightbox.js"></script>
     <script src="./scripts/lightbox-plus-jquery.js"></script>
+
+    <!-- aos library js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/aos.js"></script>
+
+    <!-- way point js library -->
+    <script src="./scripts/waypoint.js"></script>
+
+    <!-- jquery counter js library -->
+    <script src="./scripts/jquery-counter.js"></script>
+
+    <!-- owl carousel js -->
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
     <!-- scripts -->
     <script src="./scripts/app.js"></script>
   </body>
