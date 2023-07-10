@@ -19,3 +19,12 @@ $(".residence_row").slick({
   pauseOnFocus: false,
   pauseOnHover: false,
 });
+const nav = document.querySelector("nav");
+document.addEventListener("scroll", () => {
+  if (scrollY > 25) {
+    nav.style.background = "#131110";
+    nav.style.zIndex = "90";
+  } else {
+    nav.style.background = "transparent";
+  }
+});

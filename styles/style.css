@@ -66,6 +66,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  transition: 0.4s ease-in-out;
 }
 .nav_logo {
   width: 90px;
@@ -426,3 +429,6 @@ nav {
   position: absolute;
   right: 10% !important;
 }
+/*  */
+/* Values section */
+/*  */
