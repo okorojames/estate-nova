@@ -339,8 +339,90 @@ nav {
   color: var(--primary);
   font-weight: 600;
 }
-/* .residence_row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-} */
+.residence_row {
+  margin: 0 auto;
+}
+.residence_card {
+  cursor: pointer;
+  transition: 0.35s ease-in-out;
+}
+.residence_card:hover {
+  background: var(--lightBlue);
+}
+.residence_card_img {
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+.residence_card_context {
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.residence_card_h4 span:first-child {
+  color: var(--orange-color);
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+.residence_card_h4 span:nth-child(2) {
+  color: var(--secondary-text-color);
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+.residence_card_h3 {
+  color: var(--primary);
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.residence_card_p {
+  color: var(--secondary-text-color);
+  font-size: 1.4rem;
+}
+.slick-slide {
+  padding: 0 14px;
+}
+.slick-dots {
+  bottom: -15%;
+}
+.slick-dots li button {
+  position: relative;
+  background-color: var(--lightBlue);
+  box-shadow: 0 0 0 3px var(--orange-color);
+  border-radius: 50%;
+}
+.slick-dots li button:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  height: 70%;
+  width: 70%;
+  border-radius: 50%;
+  background: var(--orange-color);
+  transform: translate(-50%, -50%);
+}
+/*  */
+.slick-prev,
+.slick-next {
+  top: -12%;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: var(--orange-color);
+}
+.slick-prev,
+.slick-prev:before {
+  position: absolute;
+  left: 80% !important;
+}
+.slick-next:before,
+.slick-prev:before {
+  font-size: 3.4rem;
+}
+.slick-next,
+.slick-next:before {
+  position: absolute;
+  right: 10% !important;
+}
