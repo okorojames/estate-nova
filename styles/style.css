@@ -2,6 +2,7 @@
 :root {
   --primary: #1f3e72;
   --secondary: rgba(255, 255, 255, 0.78);
+  --secondary-two: rgba(150, 150, 150, 0.202);
   --black: #131110;
   --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
   --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
@@ -432,3 +433,88 @@ nav {
 /*  */
 /* Values section */
 /*  */
+.values_section {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 18rem !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 6rem;
+}
+.values_section_col_1 {
+  overflow: hidden;
+  border-radius: 45% 45% 0 0;
+  width: 550px;
+}
+.values_section_col_1_img {
+  transform: scale(1.1);
+  transition: 0.35s ease-in-out;
+}
+.values_section_col_1:hover .values_section_col_1_img {
+  transform: scale(1.2);
+}
+
+/*  */
+.values_section_col_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.values_section_col_2_header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.values_section_col_2_header h4 {
+  color: var(--orange-color);
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+.values_section_col_2_header h2 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.values_section_col_2_header p {
+  color: var(--secondary-text-color);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+/* value section drop down */
+.value_section_drop_downs {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.value_section_drop_down {
+  padding: 1rem;
+  box-shadow: 0 0 0 1.4px var(--secondary-two);
+}
+.value_section_drop_down_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1.4rem;
+  cursor: pointer;
+}
+.value_section_drop_down_header i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  font-size: 2rem;
+  color: var(--primary);
+  background: var(--lightBlue);
+  padding: 1rem;
+}
+.fa-chevron-down {
+  border-radius: 50%;
+}
+.value_section_drop_down_header h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary);
+}
