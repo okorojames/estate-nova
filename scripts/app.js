@@ -19,6 +19,8 @@ $(".residence_row").slick({
   pauseOnFocus: false,
   pauseOnHover: false,
 });
+
+//
 const nav = document.querySelector("nav");
 document.addEventListener("scroll", () => {
   if (scrollY > 25) {
@@ -51,4 +53,17 @@ drop_down_header.forEach((drop_header) => {
       e.target.parentElement.parentElement.classList.remove("toggle_drop_down");
     }
   });
+});
+
+//
+$(".testimonial_row").slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  dots: true,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  arrows: false,
 });
