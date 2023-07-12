@@ -438,7 +438,7 @@ nav {
   margin: 0 auto;
   margin-top: 18rem !important;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
   justify-items: center;
   align-items: center;
   gap: 6rem;
@@ -446,7 +446,7 @@ nav {
 .values_section_col_1 {
   overflow: hidden;
   border-radius: 45% 45% 0 0;
-  width: 550px;
+  width: 480px;
 }
 .values_section_col_1_img {
   transform: scale(1.1);
@@ -496,6 +496,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
   padding: 1.5rem 1.4rem;
   cursor: pointer;
 }
@@ -505,16 +506,58 @@ nav {
   align-items: center;
   height: 24px;
   width: 24px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--primary);
   background: var(--lightBlue);
-  padding: 1rem;
+  padding: 2.4rem;
+  border-radius: 0.8rem;
 }
 .fa-chevron-down {
-  border-radius: 50%;
+  border-radius: 50% !important;
 }
 .value_section_drop_down_header h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: var(--primary);
+}
+
+.value_section_drop_down_body {
+  display: grid;
+  grid-template-rows: 0;
+  overflow: hidden;
+  transition: grid-template-rows 0.4s ease-in-out;
+}
+.value_section_drop_down_body p {
+  color: var(--secondary-text-color);
+  font-weight: 300;
+}
+
+.toggle_drop_down {
+  grid-template-rows: 85px;
+  overflow: auto;
+  transition: grid-template-rows 400ms;
+}
+.toggle_drop_down.value_section_drop_down {
+  box-shadow: 0 5px 12px rgba(64, 102, 255, 0.2) !important;
+}
+/*  */
+/* CTA SECTION */
+/*  */
+.cta_section {
+  margin-top: 18rem;
+  padding: 7rem 0;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.78),
+      rgba(0, 0, 0, 0.78)
+    ),
+    url("../images/modern-residential.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--lightBlue);
+}
+.cta_section_content_wrapper {
+  width: 70%;
 }

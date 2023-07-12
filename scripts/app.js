@@ -28,3 +28,27 @@ document.addEventListener("scroll", () => {
     nav.style.background = "transparent";
   }
 });
+
+//
+const drop_down_header = document.querySelectorAll(
+  ".value_section_drop_down_header"
+);
+const drop_down_body = document.querySelectorAll(
+  ".value_section_drop_down_body"
+);
+drop_down_header.forEach((drop_header) => {
+  drop_header.addEventListener("click", (e) => {
+    e.target.parentElement.nextElementSibling.classList.toggle(
+      "toggle_drop_down"
+    );
+    if (
+      e.target.parentElement.nextElementSibling.classList.contains(
+        "toggle_drop_down"
+      )
+    ) {
+      e.target.parentElement.parentElement.classList.add("toggle_drop_down");
+    } else {
+      e.target.parentElement.parentElement.classList.remove("toggle_drop_down");
+    }
+  });
+});
