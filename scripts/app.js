@@ -18,6 +18,31 @@ $(".residence_row").slick({
   dots: true,
   pauseOnFocus: false,
   pauseOnHover: false,
+  responsive: [
+    {
+      breakpoint: 997,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 
 //
@@ -66,4 +91,36 @@ $(".testimonial_row").slick({
   pauseOnFocus: false,
   pauseOnHover: false,
   arrows: false,
+  responsive: [
+    {
+      breakpoint: 997,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
+
+// nav toggle function
+const hamburger = document.querySelector(".hamburger");
+const nav_links = document.querySelector(".nav_links");
+const burger = document.querySelectorAll(".burger");
+
+// handleToggleNav
+const handleToggleNav = () => {
+  nav_links.classList.toggle("toggle_nav");
+  burger.forEach((burger) => {
+    burger.classList.toggle("toggle_nav");
+  });
+};
+//
+
+hamburger.addEventListener("click", handleToggleNav);
