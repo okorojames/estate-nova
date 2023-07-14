@@ -111,7 +111,6 @@ nav {
   cursor: pointer;
 }
 .burger {
-  transition: 0.35s ease-in-out;
   background: var(--lightBlue);
   border-radius: 0.8rem;
 }
@@ -444,27 +443,23 @@ nav {
   transform: translate(-50%, -50%);
 }
 /*  */
-.slick-prev,
-.slick-next {
+.slider_btn {
+  background: var(--orange-color);
+  height: 34px;
+  width: 34px;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  color: var(--lightBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 20;
+  right: 8%;
   top: -12%;
 }
-.slick-prev:before,
-.slick-next:before {
-  color: var(--orange-color);
-}
-.slick-prev,
-.slick-prev:before {
-  position: absolute;
-  left: 80% !important;
-}
-.slick-next:before,
-.slick-prev:before {
-  font-size: 3.4rem;
-}
-.slick-next,
-.slick-next:before {
-  position: absolute;
-  right: 10% !important;
+.slider_btn.left {
+  right: 15%;
 }
 /*  */
 /* Values section */
@@ -978,14 +973,13 @@ nav {
     font-size: 4.5rem;
   }
   .main_section_col_2 {
-    width: 380px;
-    height: 80vh;
-  }
-  .main_section_col_2 a {
-    height: 100vh;
+    /* width: 380px; */
+    height: 50rem;
+    width: 100%;
   }
   .main_Section_img {
-    height: 80vh;
+    width: 100%;
+    height: 50rem;
   }
   /*  */
   .values_section_col_1 {
@@ -1048,6 +1042,9 @@ nav {
   .cta_section_rows {
     grid-template-columns: 1fr;
   }
+  .title_right_cirle {
+    right: 6%;
+  }
 }
 @media screen and (max-width: 794px) {
   .footer_wrapper {
@@ -1072,6 +1069,7 @@ nav {
   .values_section_col_1 {
     width: 38rem;
   }
+
   .hamburger {
     display: flex;
   }
@@ -1082,11 +1080,11 @@ nav {
     top: 80px;
     right: -1000px;
     background: var(--lightBlue);
-    color: var(--blue);
+    color: var(--black);
     z-index: 999 !important;
-    padding: 2rem;
+    padding: 4rem 2rem;
     border-radius: 1rem;
-    transition: 0.45s ease-in-out;
+    transition: 0.5s ease-in-out;
     box-shadow: 0 4px 14px rgba(73, 143, 255, 0.375);
     backdrop-filter: blur(12px);
   }
@@ -1159,4 +1157,22 @@ nav {
   .footer_links {
     flex-wrap: wrap;
   }
+}
+
+/* bac to top */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--blue);
+  color: var(--lightBlue);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
 }
