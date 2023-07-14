@@ -100,7 +100,7 @@ nav {
 }
 .nav_link.login_btn {
   background: var(--blue-gradient);
-  padding: 0.8rem 2.5rem;
+  padding: 0.8rem 2rem;
   border-radius: 0.8rem;
   margin-left: 3.5rem;
 }
@@ -445,8 +445,8 @@ nav {
 /*  */
 .slider_btn {
   background: var(--orange-color);
-  height: 34px;
-  width: 34px;
+  height: 26px;
+  width: 26px;
   font-size: 1.8rem;
   border-radius: 50%;
   color: var(--lightBlue);
@@ -727,7 +727,7 @@ nav {
 }
 .contact_section_col_1_col:hover {
   transform: scale(1.12);
-  box-shadow: 0 8px 12px rgba(64, 102, 255, 0.25);
+  box-shadow: 0 8px 12px rgba(64, 102, 255, 0.16);
 }
 .contact_section_col_1_col_header {
   display: flex;
@@ -1006,6 +1006,13 @@ nav {
   .main_section {
     grid-template-columns: 1fr;
   }
+  .about_section_h2 {
+    font-size: 2.6rem;
+  }
+  .about_section_p1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
   .footer_links {
     flex-wrap: wrap;
   }
@@ -1058,6 +1065,81 @@ nav {
   .footer_links {
     flex-wrap: nowrap;
   }
+  .about_section_col_2_h3 {
+    font-size: 1.8rem;
+  }
+  .about_section_col_2_h1 {
+    font-size: 2.2rem;
+  }
+  .about_section_col_2_p {
+    font-size: 1.2rem;
+  }
+  .about_section_col_2_col_1_header h1 {
+    font-size: 1.5rem;
+  }
+  .about_section_col_2_col_1_header i {
+    font-size: 3rem;
+  }
+  .about_section_col_2_col_1_p {
+    font-size: 1.2rem;
+  }
+  .residence_header_h2 {
+    font-size: 1.9rem;
+  }
+  .residence_header_h1 {
+    font-size: 2.8rem;
+  }
+  .residence_card_h3 {
+    font-size: 1.8rem;
+  }
+  .residence_card_h4 span:first-child {
+    font-size: 1.8rem;
+  }
+  .residence_card_h3 {
+    font-size: 1.8rem;
+  }
+  .residence_card_p {
+    font-size: 1.2rem;
+  }
+  .residence_header {
+    margin-bottom: 8rem;
+  }
+  .values_section_col_2_header h4 {
+    font-size: 1.9rem;
+  }
+  .values_section_col_2_header h2 {
+    font-size: 2.8rem;
+  }
+  .value_section_drop_down_header h4 {
+    font-size: 1.4rem;
+  }
+  .value_section_drop_down_header h4 {
+    font-size: 1.3rem;
+  }
+  .value_section_drop_down_body p {
+    font-size: 1.2rem;
+  }
+  .cta_secion_header_paragraph {
+    font-size: 1.4rem;
+  }
+  .contact_secion_col_1_header h5 {
+    font-size: 1.9rem;
+  }
+  .contact_secion_col_1_header h3 {
+    font-size: 2.6rem;
+  }
+  .contact_secion_col_1_header p {
+    font-size: 1.2rem;
+  }
+  .gta_h2 {
+    font-size: 2.2rem;
+  }
+  .gta_paragraph {
+    font-size: 1.25rem;
+  }
+  .testimonial_paragraph {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .main_section_col_2,
@@ -1100,6 +1182,13 @@ nav {
   .values_section_col_1_img,
   .values_section_col_1 {
     height: 100%;
+  }
+  .contact_section_col_1_rows {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .contact_section_col_1_col:hover {
+    transform: scale(1.03);
   }
 }
 /*  */

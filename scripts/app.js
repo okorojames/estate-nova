@@ -115,6 +115,7 @@ $(".testimonial_row").slick({
 const hamburger = document.querySelector(".hamburger");
 const nav_links = document.querySelector(".nav_links");
 const burger = document.querySelectorAll(".burger");
+const nav_link = document.querySelectorAll(".nav_link");
 
 // handleToggleNav
 const handleToggleNav = () => {
@@ -123,6 +124,12 @@ const handleToggleNav = () => {
     burger.classList.toggle("toggle_nav");
   });
 };
+//
+nav_link.forEach((link) => {
+  link.addEventListener("click", () => {
+    nav_links.classList.remove("toggle_nav");
+  });
+});
 //
 
 hamburger.addEventListener("click", handleToggleNav);
