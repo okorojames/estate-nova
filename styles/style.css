@@ -459,7 +459,7 @@ nav {
   top: -12%;
 }
 .slider_btn.left {
-  right: 15%;
+  right: 18%;
 }
 /*  */
 /* Values section */
@@ -1161,7 +1161,9 @@ nav {
 
 /* bac to top */
 #myBtn {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -1171,8 +1173,18 @@ nav {
   background-color: var(--blue);
   color: var(--lightBlue);
   cursor: pointer;
-  padding: 15px;
+  padding: 1.2rem;
   border-radius: 10px;
   font-size: 18px;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
   transition: 0.5s ease-in-out;
+  user-select: none;
+}
+.show_to_top#myBtn {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+  transform: translate(0, -20px) scale(1.12);
 }

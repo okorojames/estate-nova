@@ -129,7 +129,7 @@ hamburger.addEventListener("click", handleToggleNav);
 
 // bac to top btn
 // Get the button:
-let mybutton = document.getElementById("myBtn");
+const mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -141,9 +141,9 @@ function scrollFunction() {
     document.body.scrollTop > 700 ||
     document.documentElement.scrollTop > 700
   ) {
-    mybutton.style.display = "block";
+    mybutton.classList.add("show_to_top");
   } else {
-    mybutton.style.display = "none";
+    mybutton.classList.remove("show_to_top");
   }
 }
 
