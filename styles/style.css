@@ -1168,8 +1168,8 @@ nav {
   bottom: 20px;
   right: 30px;
   z-index: 99;
-  border: none;
-  outline: none;
+  height: 35px;
+  width: 35px;
   background-color: var(--blue);
   color: var(--lightBlue);
   cursor: pointer;
