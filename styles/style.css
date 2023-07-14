@@ -1170,6 +1170,8 @@ nav {
   z-index: 99;
   height: 35px;
   width: 35px;
+  border: 0;
+  outline: 0;
   background-color: var(--blue);
   color: var(--lightBlue);
   cursor: pointer;
