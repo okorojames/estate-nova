@@ -457,6 +457,7 @@ nav {
   z-index: 20;
   right: 8%;
   top: -12%;
+  cursor: pointer;
 }
 .slider_btn.left {
   right: 18%;
