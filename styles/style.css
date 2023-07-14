@@ -1175,6 +1175,9 @@ nav {
     margin-left: 0;
     color: var(--lightBlue);
   }
+  .slider_btn.left {
+    right: 25%;
+  }
   .values_section_col_1 {
     width: 60%;
     margin: 0 auto;
