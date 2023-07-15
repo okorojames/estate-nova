@@ -563,12 +563,19 @@ nav {
   color: var(--secondary-text-color);
   font-weight: 300;
 }
+.value_chevron {
+  transition: 0.4s ease-in-out;
+}
+.value_section_drop_down.toggle_value_chevon .value_chevron {
+  transform: rotate(180deg);
+}
 
-.toggle_drop_down {
+.value_section_drop_down.toggle_drop_down .value_section_drop_down_body {
   grid-template-rows: 85px;
   overflow: auto;
   transition: grid-template-rows 400ms;
 }
+
 .toggle_drop_down.value_section_drop_down {
   box-shadow: 0 5px 12px rgba(64, 102, 255, 0.2) !important;
 }

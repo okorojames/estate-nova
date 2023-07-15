@@ -59,26 +59,12 @@ document.addEventListener("scroll", () => {
 });
 
 //
-const drop_down_header = document.querySelectorAll(
-  ".value_section_drop_down_header"
-);
-const drop_down_body = document.querySelectorAll(
-  ".value_section_drop_down_body"
-);
+const drop_down_header = document.querySelectorAll(".value_section_drop_down");
+
 drop_down_header.forEach((drop_header) => {
   drop_header.addEventListener("click", (e) => {
-    e.target.parentElement.nextElementSibling.classList.toggle(
-      "toggle_drop_down"
-    );
-    if (
-      e.target.parentElement.nextElementSibling.classList.contains(
-        "toggle_drop_down"
-      )
-    ) {
-      e.target.parentElement.parentElement.classList.add("toggle_drop_down");
-    } else {
-      e.target.parentElement.parentElement.classList.remove("toggle_drop_down");
-    }
+    drop_header.classList.toggle("toggle_drop_down");
+    drop_header.classList.toggle("toggle_value_chevon");
   });
 });
 
